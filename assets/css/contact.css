@@ -130,3 +130,9 @@
         transform: translateX(-1000px);
     }
 }
+
+@media screen and (max-width: 1010px) {
+    .row {
+        flex-direction: column;
+    }
+}
