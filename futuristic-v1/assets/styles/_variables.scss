@@ -1,0 +1,29 @@
+$futuristic-bg: #95f7ff;
+$futuristic-color: #00DAEC;
+
+@mixin triple-effect-card {
+  width: 180px;
+  padding: 40px 20px 30px 20px;
+  margin: 20px;
+  display: inline-block;
+  background-color:#151515;
+  color: white;
+  text-align: center;
+  border-radius: 50px;
+  box-shadow:
+          rgba(149, 247, 255, 0.2) 5px 5px,
+          rgba(149, 247, 255, 0.1) 10px 10px,
+          rgba(149, 247, 255, 0.05) 15px 15px;
+  border: 1px solid rgba(149, 247, 255, 0.4);
+  transition: 1s;
+
+  &:hover {
+    transform: translateX(-15%) scale(1.1);
+    transition: 1s;
+    box-shadow: rgba(149, 247, 255, 0.4) 5px 5px,
+    rgba(149, 247, 255, 0.3) 10px 10px,
+    rgba(149, 247, 255, 0.2) 15px 15px,
+    rgba(149, 247, 255, 0.1) 20px 20px,
+    rgba(149, 247, 255, 0.05) 25px 25px;
+  }
+}

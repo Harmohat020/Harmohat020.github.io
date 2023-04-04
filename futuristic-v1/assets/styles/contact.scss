@@ -1,0 +1,108 @@
+@import './variables';
+
+.row {
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .col1, .col2 {
+    flex: 50%;
+    padding: 10px;
+  }
+
+  .col1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .col2 {
+    p {
+      color: white;
+      vertical-align: baseline;
+    }
+  }
+}
+
+.contact-svg > svg {
+  width: 100%;
+}
+
+
+.card {
+  @include triple-effect-card;
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+
+.github-img {
+  background-color: white;
+}
+
+.social-links {
+  text-align: center;
+}
+
+.svgGroupOne {
+  animation: bounce 5s linear infinite;
+}
+
+.svgGroupTwo {
+  animation: bounce 9s linear infinite;
+}
+
+.svgGroupThree {
+  animation: bounce 7s linear infinite;
+}
+
+.cloud1 {
+  animation: move 18s linear infinite;
+}
+
+.cloud2 {
+  animation: move 25s linear infinite;
+}
+
+.cloud3 {
+  animation: move 20s linear infinite;
+}
+
+.cloud4 {
+  animation: move 30s linear infinite;
+}
+
+.cloud5 {
+  animation: move 40s linear infinite;
+}
+
+.cloud6 {
+  animation: move 35s linear infinite;
+}
+
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateX(-1000px);
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .row {
+    flex-direction: column;
+  }
+}

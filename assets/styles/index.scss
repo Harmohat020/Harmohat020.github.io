@@ -1,0 +1,27 @@
+@import './variables';
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+    color: white;
+}
+
+.content {
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0);
+    backdrop-filter: blur( 1.5px );
+    border-radius: 10px;
+    padding: 0 18px 0 18px;
+}
+
+.options-wrapper a {
+    @include versionLinks();
+}
+
+.option1 {
+    background-color: $futuristic-btn-bg;
+}

@@ -1,0 +1,112 @@
+.row {
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.row .col1, .row .col2 {
+  flex: 50%;
+  padding: 10px;
+}
+.row .col1 {
+  display: flex;
+  justify-content: center;
+}
+.row .col2 p {
+  color: white;
+  vertical-align: baseline;
+}
+
+.contact-svg > svg {
+  width: 100%;
+}
+
+.card {
+  width: 180px;
+  padding: 40px 20px 30px 20px;
+  margin: 20px;
+  display: inline-block;
+  background-color: #151515;
+  color: white;
+  text-align: center;
+  border-radius: 50px;
+  box-shadow: rgba(149, 247, 255, 0.2) 5px 5px, rgba(149, 247, 255, 0.1) 10px 10px, rgba(149, 247, 255, 0.05) 15px 15px;
+  border: 1px solid rgba(149, 247, 255, 0.4);
+  transition: 1s;
+}
+.card:hover {
+  transform: translateX(-15%) scale(1.1);
+  transition: 1s;
+  box-shadow: rgba(149, 247, 255, 0.4) 5px 5px, rgba(149, 247, 255, 0.3) 10px 10px, rgba(149, 247, 255, 0.2) 15px 15px, rgba(149, 247, 255, 0.1) 20px 20px, rgba(149, 247, 255, 0.05) 25px 25px;
+}
+.card img {
+  border-radius: 50%;
+}
+
+.github-img {
+  background-color: white;
+}
+
+.social-links {
+  text-align: center;
+}
+
+.svgGroupOne {
+  animation: bounce 5s linear infinite;
+}
+
+.svgGroupTwo {
+  animation: bounce 9s linear infinite;
+}
+
+.svgGroupThree {
+  animation: bounce 7s linear infinite;
+}
+
+.cloud1 {
+  animation: move 18s linear infinite;
+}
+
+.cloud2 {
+  animation: move 25s linear infinite;
+}
+
+.cloud3 {
+  animation: move 20s linear infinite;
+}
+
+.cloud4 {
+  animation: move 30s linear infinite;
+}
+
+.cloud5 {
+  animation: move 40s linear infinite;
+}
+
+.cloud6 {
+  animation: move 35s linear infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+}
+@keyframes move {
+  0% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateX(-1000px);
+  }
+}
+@media screen and (max-width: 1010px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */
